@@ -1,0 +1,43 @@
+/* Header */
+
+header {
+    background-color: wheat;
+   
+
+    .nav {
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            background-color: darkgreen;
+            padding: 15px;
+                margin-inline-end: 10px;
+           
+
+            a {
+                text-decoration: none;
+                font-style: none;
+                color: white;
+            }
+        }
+
+
+        .link {
+                background-color: darkmagenta;
+                padding: 15px;
+                margin-inline-end: 10px;
+            a {
+                text-decoration: none;
+                font-style: none;
+                color: white;
+                padding-left: 50px;
+                
+
+            }
+
+        }
+    }
+
+
+}

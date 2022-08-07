@@ -1,0 +1,18 @@
+/* Varibles */
+$size-font-size: 16px;
+
+
+h1{
+    font-size: $size-font-size *5 ;
+}
+
+
+/* Condicionales */
+
+$color : h3;
+
+main{
+    @if $color  < h2{
+        color: red;
+    }
+}
