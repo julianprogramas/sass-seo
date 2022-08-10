@@ -1,0 +1,27 @@
+
+   /* Mapas */
+
+   $redes: (
+    twitter: #0c3ab8 ,
+    facebook:#061986,
+    instagram:#bd0dbd,
+    gob:#ffff00
+   );
+
+   @each $red , $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }    
+   }
+
+ 
+$color-tw:map-get($redes, twitter );
+$color-fb:map-get($redes , facebook );
+$color-ig:map-get($redes , instagram );
+$color-gob:map-get($redes , gob );
+
+
+
+h6{
+    color:  $color-ig;
+}

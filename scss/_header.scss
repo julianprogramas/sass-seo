@@ -1,8 +1,9 @@
 /* Header */
+@import"maps";
 
 header {
-    background-color: wheat;
-   
+    background-color: black;
+  
 
     .nav {
         font-size: 30px;
@@ -18,7 +19,9 @@ header {
             a {
                 text-decoration: none;
                 font-style: none;
-                color: white;
+                color: $color-ig;
+                
+                
             }
         }
 
@@ -32,6 +35,7 @@ header {
                 font-style: none;
                 color: white;
                 padding-left: 50px;
+                color: $color-gob
                 
 
             }

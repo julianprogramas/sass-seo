@@ -1,13 +1,17 @@
 /* Main */ 
+@import"maps";
 main{
     background: wheat;
-    height: 100vh;
+    height: 140vh;
     width: 100%;
     text-align: center;
+
     
     h1{
         margin-top: 10px;
         font-family: cursive;
         color: darkorange;
     }
+
+    h5{color: $color-tw;}
 }

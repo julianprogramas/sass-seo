@@ -2,8 +2,24 @@
   margin: 0; }
 
 /* Header */
+/* Mapas */
+.red-twitter {
+  color: #0c3ab8; }
+
+.red-facebook {
+  color: #061986; }
+
+.red-instagram {
+  color: #bd0dbd; }
+
+.red-gob {
+  color: #ffff00; }
+
+h6 {
+  color: #bd0dbd; }
+
 header {
-  background-color: wheat; }
+  background-color: black; }
   header .nav {
     font-size: 30px;
     display: flex;
@@ -15,7 +31,7 @@ header {
       header .nav .logo a {
         text-decoration: none;
         font-style: none;
-        color: white; }
+        color: #bd0dbd; }
     header .nav .link {
       background-color: darkmagenta;
       padding: 15px;
@@ -24,18 +40,37 @@ header {
         text-decoration: none;
         font-style: none;
         color: white;
-        padding-left: 50px; }
+        padding-left: 50px;
+        color: #ffff00; }
 
 /* Main */
+/* Mapas */
+.red-twitter {
+  color: #0c3ab8; }
+
+.red-facebook {
+  color: #061986; }
+
+.red-instagram {
+  color: #bd0dbd; }
+
+.red-gob {
+  color: #ffff00; }
+
+h6 {
+  color: #bd0dbd; }
+
 main {
   background: wheat;
-  height: 100vh;
+  height: 140vh;
   width: 100%;
   text-align: center; }
   main h1 {
     margin-top: 10px;
     font-family: cursive;
     color: darkorange; }
+  main h5 {
+    color: #0c3ab8; }
 
 /* Footer */
 footer {
@@ -52,3 +87,73 @@ footer {
 /* Varibles */
 h1 {
   font-size: 80px; }
+
+/* Condicionales */
+p {
+  color: red; }
+
+/* bucle */
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 6em; }
+
+h3 {
+  font-size: 9em; }
+
+h4 {
+  font-size: 12em; }
+
+h5 {
+  font-size: 15em; }
+
+h6 {
+  font-size: 18em; }
+
+/*Each  color*/
+h2 {
+  color: darkred; }
+
+h3 {
+  color: green; }
+
+h4 {
+  color: darkblue; }
+
+/* Extend */
+.boton, .boton-primario, .boton-secundario {
+  font-size: 1.5em;
+  border: solid 2px;
+  padding: 8px 16px;
+  margin: 8px; }
+
+.boton-primario {
+  background-color: #061986;
+  color: white; }
+
+.boton-secundario {
+  background-color: #0c3ab8;
+  color: white; }
+
+/*mixin  */
+header {
+  height: 100px;
+  width: auto;
+  margin: 0; }
+
+/* Mapas */
+.red-twitter {
+  color: #0c3ab8; }
+
+.red-facebook {
+  color: #061986; }
+
+.red-instagram {
+  color: #bd0dbd; }
+
+.red-gob {
+  color: #ffff00; }
+
+h6 {
+  color: #bd0dbd; }

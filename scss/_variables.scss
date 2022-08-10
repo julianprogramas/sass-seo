@@ -4,15 +4,83 @@ $size-font-size: 16px;
 
 h1{
     font-size: $size-font-size *5 ;
+    
 }
 
 
 /* Condicionales */
 
-$color : h3;
-
-main{
-    @if $color  < h2{
-        color: red;
+$color : rojo ;
+p{
+    @if $color == azul{
+        color: blue;
+    }@else{
+        color:red
     }
+    }
+
+
+/* bucle */
+
+@for $i from 1 through 6{
+    h#{$i} {
+        font-size: $i * 3em ;
+    }
+}    
+
+/*Each  color*/
+  
+$lista-colores: darkred, darkblue, darkgreen, darkgrey; 
+$lista1: red, green, pato , yellow, blue;
+
+$primario: nth($lista-colores, 2  );
+$secundario: nth($lista1 ,2 );
+$redes1:nth($lista-colores , 1 );
+
+h2{
+    color: $redes1;
 }
+h3{
+    color: $secundario;
+}
+h4{
+    color: $primario;
+}
+
+
+
+   /* Extend */
+   .boton{
+    font-size: 1.5em;
+    border: solid 2px;
+    padding: 8px 16px;
+    margin: 8px;
+   }
+
+   .boton-primario{
+    @extend.boton;
+
+    background-color: #061986;
+    color: white;
+   }
+
+   .boton-secundario{
+    @extend .boton;
+    background-color: #0c3ab8;
+    color: white;
+    
+   }
+
+
+   /*mixin  */
+
+   @mixin size ($alto, $ancho , $espaciado){
+    height: $alto;
+    width: $ancho;
+    margin: $espaciado;
+    
+   }
+   
+   header {
+    @include size( 100px, auto, 0 )
+   }
