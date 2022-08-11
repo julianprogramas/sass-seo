@@ -1,0 +1,152 @@
+- Index.html
+    -Agregue Keywords: quesos , cremososo , mozzarella , caba
+    -Agregue description: Quesos fernandez , Buscanos en caba
+    -Agregue Link: ./css/style.css.
+    -Modifique mi titulo:Quesos fernandez || caba .
+
+    -Cree un header: con una section llamada "nav"
+    -contiene una clase llamada Logo 
+    -contiene una segunda clase llamada link donde contiene dos clase de botones: "boton-primario" , "boton-secundario".
+
+    -Agregue un main  con encabezados
+     H1:quesos fernandez
+     H2:somos los numeros 1
+     H3:en la
+     H4:argentina
+     H5:en
+     H6:quesitos
+
+     -Añadi una clase llamada red que contiene un texto:los mejores quesos de la argentina
+     -Sume un <p>:nos podes encontrar en Caba
+
+     Finalizo con un Footer : tiene un contenedor que almacena tres clases  de colores de una lista y un href llamado de un texto
+     - <a class="red-gob" href="">quesos</a>
+     <a class="red-gob"  href="">cremosos</a>
+     <a class="red-facebook" href="">mozzarella</a>
+
+
+
+
+-estilos.scss
+    -llamo a la propiedad  * :margin: 0;
+    -añado imports:
+         @import"header";
+         @import"main";
+         @import"footer";
+         @import"variables";
+         @import"maps";
+
+
+
+-header.scss
+    -llamo un import:@import"maps";
+
+    -le doy formato a header:background-color: black;
+    -añado estilos a .nav : 
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+
+    -Doy estilos a .logo : 
+            background-color: darkgreen;
+            padding: 15px;
+            margin-inline-end: 10px;
+    -Doy estilos a  los a de la clase nav: 
+            text-decoration: none;
+            font-style: none;
+            color: $color-ig;
+    -Doy estilos a la clase  Link
+            background-color: darkmagenta;
+            padding: 15px;
+            margin-inline-end: 10px;
+    -Doy estilos a los a  de la clase link:
+            text-decoration: none;
+            font-style: none;
+            color: white;
+            padding-left: 50px;
+            color: $color-gob
+
+
+-main.scss      
+        -llamo un import:@import"maps";
+        -Agrego estilos a main:
+                 background: wheat;
+                height: 140vh;
+                 width: 100%;
+                text-align: center;
+        -agrego estilos a H1:   
+                margin-top: 10px;
+                font-family: cursive;
+                color: darkorange;
+        -Agrego estilos a H5:
+                color: $color-tw;
+
+
+-Footer.scss    
+        -Agrego estilos a el Footer:
+                background: darkred;
+                .contenedor{display: flex;
+                 justify-content: space-between;
+                     
+                 a{  text-decoration: none;
+                     font-size: 28px;
+                     margin: 5px;
+                     font-family: cursive;
+
+
+-maps.scss
+        -agrego estilos a maps.scss
+        -creo un mapa de color en $redes:
+                twitter: #0c3ab8 ,
+                facebook:#061986,
+                instagram:#bd0dbd,
+                gob:#ffff00
+        -doy formato en H6: color:  $color-ig;
+
+
+-variables.scss
+        -agrego formato a variables: $size-font-size: 16px;
+        -modifico la medida de el h1:font-size: $size-font-size *5 ;
+        -Agrego condficinales- p{
+                                @if $color == azul
+                                color: blue;
+                                @else
+                                color:red
+        -agrego un bucle que modifica sus  medidas en todos los H:
+                                @for $i from 1 through 6{
+                                h#{$i} {
+                                font-size: $i * 3em ;
+        -agrego un Extend
+        -asigno el valor boton y le doy estilo: 
+                font-size: 1.5em;
+                border: solid 2px;
+                padding: 8px 16px;
+                margin: 8px;
+        -llamo boton-primario y le asigno la propiedad .boton
+                .boton-primario{
+                @extend.boton;
+                background-color: #061986;
+                color: white;
+        -llamo boton-secundario y le asigo la propiedad . boton
+                @extend .boton;
+                background-color: #0c3ab8;
+                color: white;
+        
+        -agrego un mixin
+        -le doy alto ancho y espacio :
+                @mixin size ($alto, $ancho , $espaciado){
+                height: $alto;
+                width: $ancho;
+                margin: $espaciado;
+    
+                }
+   
+                header {
+                @include size( 100px, auto, 0 )
+                 }
+
+        
+                                    
+   
+
+
